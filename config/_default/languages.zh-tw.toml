@@ -1,11 +1,11 @@
-languageCode = "en"
-languageName = "English"
-weight = 2
-title = "Geeky Geekery"
+languageCode = "zh-tw"
+languageName = "Traditional Chinese"
+weight = 1
+title = "Geeky Geekery 萬能工程師"
 
 [params]
-  displayName = "EN"
-  isoCode = "en"
+  displayName = "繁體中文"
+  isoCode = "zh-tw"
   rtl = false
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
@@ -14,10 +14,10 @@ title = "Geeky Geekery"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [author]
-  name = "Erik L."
+  name = "艾希克"
   image = "img/profile1.jpeg"
-  headline = "Software Engineer"
-  bio = "A little bit about you" # appears in author card for each article
+  headline = "軟體工程師"
+  bio = "只要有心 人人都可以成為萬能工程師" # appears in author card for each article
   links = [
     # { email = "mailto:liu.liangyu.tw@gmail.com" },
 #     { link = "https://link-to-some-website.com/" },

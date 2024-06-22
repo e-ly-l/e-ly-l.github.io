@@ -1,0 +1,5 @@
+---
+title: CATEGORIES
+---
+
+All categories
