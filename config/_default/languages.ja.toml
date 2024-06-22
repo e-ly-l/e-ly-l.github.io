@@ -1,11 +1,11 @@
-languageCode = "jp"
+languageCode = "ja"
 languageName = "日本語"
 weight = 2
 title = "Geeky Geekery"
 
 [params]
   displayName = "日本語"
-  isoCode = "jp"
+  isoCode = "ja"
   rtl = false
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
