@@ -2,10 +2,16 @@
 title: "Posts"
 description: ""
 
+showLikes: true
+showViews: true
+
 cascade:
-  showDate: true
-  showAuthor: true
-  invertPagination: true
+  showEdit: false
+  showReadingTime: false
+  showSummary: false
+  showComments: true
+  showLikes: false
+  showViews: false
 ---
 
 {{< lead >}}
