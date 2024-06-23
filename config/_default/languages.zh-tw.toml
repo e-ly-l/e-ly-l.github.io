@@ -4,7 +4,7 @@ weight = 1
 title = "萬能工程師"
 
 [params]
-  displayName = "繁中"
+  displayName = "繁體中文"
   isoCode = "zh-tw"
   rtl = false
   dateFormat = "2 January 2006"
@@ -14,7 +14,7 @@ title = "萬能工程師"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [author]
-  name = "艾希克"
+  name = "艾瑞克"
   image = "img/profile1.jpeg"
   headline = "軟體工程師"
   bio = "只要有心 人人都可以成為萬能工程師" # appears in author card for each article

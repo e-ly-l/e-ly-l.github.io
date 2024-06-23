@@ -8,22 +8,22 @@ tags = ["Tech Blog","Hugo", "blowfish", "Github Pages", "Github Actions"]
 categories = ["implement"]
 +++
 
-我從剛開始當工程師不久，就聽到很多前輩說，工程師成長最快的方式就是 **寫技術部落格** 和 **寫 Side-Project** 。
+我從剛開始當工程師不久，就聽到很多前輩說，工程師成長最快的方式就是 **寫技術部落格** 和 **做 Side-Project** 。
 
 而最近和朋友寫的 Side-Project 都已經上線、開始做推廣了，才想到我好像還沒有技術部落格。
 
-於是再做了一番研究後，決定使用 Hugo 這個 SSG 框架。
+於是在做了一番研究後，決定使用 Hugo 這個 SSG 框架。
 而在他的主題中尤其覺得 Blowfish 功能完整、可以設定的部分很多，符合我對於技術部落格的樣板需求。
 重點是很好看。
 
 ![](files/Blowfish.png)
 
-各位看看 Blowfish 的 logo，多麽可愛啊～
+看看 Blowfish 的 logo，多麽可愛啊～
 
 接著，我就開始思考要部署到哪個地方會比較適合。
 對於剛剛開始的我來說，我希望這個平台是（起碼初期）免費，且最好部署上去的過程可以盡量自動化。
 一樣做了一些研究後，覺得 Github Pages 很符合我的初期使用。
-畢竟我是要搭建的是技術部落格，那他跟我的 Github 放在一起，我覺得沒毛病。
+畢竟我是要搭建技術部落格的，那把它跟我的 Github 放在一起，我覺得沒毛病。
 
 既然決定好了技術棧，那就開始搭建吧。
 
@@ -48,14 +48,14 @@ brew install node
 
 而除了這幾種方法外， Blowfish 有個叫 [blowfish-tools](https://github.com/nunocoracao/blowfish-tools) 的 CLI 工具，可以非常簡單的完成設定，這也是官方推薦使用的方式。
 
-安裝完工具後，我們就可以透過指令來建立一個專案囉。
+安裝完工具後，就可以透過指令來建立一個專案囉。
 
 ```bash
 npm install -g blowfish-tools
 blowfish-tools new <new_site_name>
 ```
 
-我們可以進到專案裡，使用 Hugo CLI 在本地起一個網頁看一下樣子。
+現在進到專案裡，使用 Hugo CLI 在本地起一個網頁看一下樣子。
 
 ```bash
 cd <new_site_name>
@@ -113,7 +113,7 @@ Github Pages 目前提供 2 種自動化部署方式。
 嗯，非常優雅。
 ![](files/elegant.png)
 
-我是直接使用他的基本設定。
+可以直接使用他的基本設置。
 這邊來講一下他的實作方法，畢竟我一開始用的時候也是遇到一些狀況(詳見本文最後的題外話)。
 
 在有 commit push 到 `main` 的時候觸發工作流程，其包含:
@@ -190,7 +190,7 @@ jobs:
 
 - [Build your homepage using Blowfish and Hugo](https://n9o.xyz/posts/202310-blowfish-tutorial/)
 
-  - 非常詳細地講解如何建立 blowfish 專案以及初步設定，同樣使用 [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) 但最後是部署到 firebase 上。
+  - 非常詳細地講解如何建立 blowfish 專案以及初步設定，同樣使用 [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) ，不過他是部署到 firebase 上。
 
 - [Hugo 搭配 Github Actions 實現自動化部屬(二)](https://josh-ku.com/post/hugo-install-p2/)
   - [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) 的進階使用，推到另一個 Github Repository 並直接從分支 master 部署到 Github Pages。
@@ -205,6 +205,6 @@ jobs:
 而他果然不出意外就要出意外地出現以下錯誤訊息，當下看到時還一度很不解。
 ![CleanShot 2024-06-20 at 12.27.07.png](files/cleanshot-2024-06-20-at-12-27-07.png)
 
-直到認真把官方文件看完，看到他可以設定 `publish_branch` 而預設值為 `gh-pages` 時才搞懂發生什麼事。
+直到認真把官方文件看完，看到他可以設定 `publish_branch` ，而且它的預設值是 `gh-pages` 時才搞懂發生什麼事。
 我當下的感覺就是...
 ![](files/bike_fall.png)
