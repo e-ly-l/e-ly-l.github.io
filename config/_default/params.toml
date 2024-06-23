@@ -133,8 +133,8 @@ smartTOCHideUnfocusedChildren = true
   # domain = "llama.yoursite.com"
 
 [umamiAnalytics]
-  # websiteid = "ABC12345"
-  # domain = "llama.yoursite.com"
+  websiteid = "b22cb1e4-6eac-4e3b-9ce0-a489a75de07a"
+  domain = "e-ly-l.github.io"
 
 [buymeacoffee]
   # identifier = ""
