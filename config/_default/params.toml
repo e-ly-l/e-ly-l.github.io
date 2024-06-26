@@ -137,8 +137,8 @@ smartTOCHideUnfocusedChildren = true
   domain = "e-ly-l.github.io"
 
 [buymeacoffee]
-  # identifier = ""
-  # globalWidget = true
+  identifier = "e____l"
+  globalWidget = true
   # globalWidgetMessage = "Hello"
   # globalWidgetColor = "#FFDD00"
   # globalWidgetPosition = "Right"
