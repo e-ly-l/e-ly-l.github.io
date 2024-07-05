@@ -14,7 +14,7 @@ title = "Geeky Geekery"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [author]
-  name = "Erik L."
+  name = "EL"
   image = "img/profile1.jpeg"
   headline = "Software Engineer"
   bio = "A little bit about you" # appears in author card for each article

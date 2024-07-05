@@ -56,7 +56,7 @@ Choose the branch we want to automatically deploy in the future.
 Ensure we finish the build of the website, as mentioned in the [last post](../blowfish-a-hugo-blog), or we will need to complete the Build settings.  
 ![](files/add-custom-domain.png)
 It will start to deploy. Once finished, it will look like this:  
-![](files/deployment-dashboard.png)
+![](files/deployment-dashboard-bFAyJjvcpU.png)
 Now we can connect the website to the domain we just bought.  
 ![](files/set-up-builds-and-deployments.png)
 
