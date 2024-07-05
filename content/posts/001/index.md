@@ -105,7 +105,7 @@ Github Pages 目前提供 2 種自動化部署方式。
 2. 從特定分支部署
 
 而如果我們選擇 **[使用 GitHub Actions]** 的話，可以看到其中包含 Hugo 自動化部署的的官方設定。
-![CleanShot 2024-06-20 at 15.28.24.png](files/cleanshot-2024-06-20-at-15-28-24.png)
+![](files/github-pages-build-and-deployment-options.png)
 
 但看了一下，[設定檔](https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml)的內容，覺得不夠優雅。
 所以搜尋了一下，找到一個別人寫好的 Github Actions 工具 [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)。
@@ -168,21 +168,21 @@ jobs:
 ```
 
 把這個設定檔加入專案裡然後推到 Github ，這時候我們到 Github 專案頁面的 Actions 就可以看到他在執行了。
-![CleanShot 2024-06-20 at 16.17.42.png](files/cleanshot-2024-06-20-at-16-17-42.png)
+![](files/github-actions-workflow-AxRPW5EG6C.png)
 
 執行完再回到 Code 的地方，看一下分支，果然多了 `gh-pages` 。
-![CleanShot 2024-06-20 at 16.18.15.png](files/cleanshot-2024-06-20-at-16-18-15.png)
+![](files/github-switch-branches-tags.png)
 
 ### 設定 Github Pages
 
 到 Settings 頁面點 Pages ，並設定自動化流程為 **[從特定分支部署]** 。
-![CleanShot 2024-06-20 at 15.57.02.png](files/cleanshot-2024-06-20-at-15-57-02.png)
+![](files/github-pages-build-and-deployment-settings.png)
 設定完後，再次到 Actions 看，他就已經在跑部署了。
-![CleanShot 2024-06-20 at 16.19.37.png](files/cleanshot-2024-06-20-at-16-19-37.png)  
+![](files/github-actions-workflow-overview-BYlqzIXbWz.png)  
 等上面的部署跑完，再次到 Pages 看，會顯示已經部署到外部位址了。
-![CleanShot 2024-06-20 at 15.52.14.png](files/cleanshot-2024-06-20-at-15-52-14.png)
+![](files/github-pages-site-live-notification-12S7XwQ9iB.png)
 連到外部位址，果然出現了。
-![CleanShot 2024-06-20 at 16.21.18.png](files/cleanshot-2024-06-20-at-16-21-18.png)
+![](files/blowfish-website-homepage-upPOSd_KmI.png)
 
 這樣我們就完成部落格的自動化部署啦，以後只要推到 Github ，部落格就會自動更新囉～
 
@@ -203,7 +203,7 @@ jobs:
 
 所以我就開了一個分支叫 `gh-pages`，並且把設定檔裡的分支從 `main` 改成 `gh-pages` 好做測試。
 而他果然不出意外就要出意外地出現以下錯誤訊息，當下看到時還一度很不解。
-![CleanShot 2024-06-20 at 12.27.07.png](files/cleanshot-2024-06-20-at-12-27-07.png)
+![](files/deploy-action-failed.png)
 
 直到認真把官方文件看完，看到他可以設定 `publish_branch` ，而且它的預設值是 `gh-pages` 時才搞懂發生什麼事。
 我當下的感覺就是...
