@@ -2,4 +2,4 @@
 而最近和朋友寫的 Side-Project 都已經上線、開始做推廣了，才想到我好像還沒有技術部落格。
 於是在做了一番研究後，決定使用 Hugo 這個 SSG 框架。 而在他的主題中尤其覺得 Blowfish 功能完整、可以設定的部分很多，符合我對於技術部落格的樣板需求。 重點是很好看。
 看看 Blowfish 的 logo，多麽可愛啊～
-接著，我就開始思考要部署到哪個地方會比較適合。 對於剛剛開始的我來說，我希望這個平台是（起碼初期）免費，且最好部署上去的過程可以盡量自動化。 一樣做了一些研究後，覺得 Github Pages 很符合我的初期使用。 畢竟我是要搭建技術部落格的，那把它跟我的 Github 放在一起，我覺得沒毛病。</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/blowfish-a-hugo-blog/featured.png"/></item></channel></rss>
+接著，我就開始思考要部署到哪個地方會比較適合。 對於剛剛開始的我來說，我希望這個平台是（起碼初期）免費，且最好部署上去的過程可以盡量自動化。 一樣做了一些研究後，覺得 Github Pages 很符合我的初期使用。 畢竟我是要搭建技術部落格的，那把它跟我的 Github 放在一起，我覺得沒毛病。</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/blowfish-a-hugo-blog/featured-001.png"/></item></channel></rss>
