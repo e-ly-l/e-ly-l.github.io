@@ -18,7 +18,7 @@ categories = ["implement"]
 
 ![](files/Blowfish.png)
 
-看看 Blowfish 的 logo，多麽可愛啊～
+> 看看 Blowfish 的 logo，多麽可愛啊～
 
 接著，我就開始思考要部署到哪個地方會比較適合。
 對於剛剛開始的我來說，我希望這個平台是（起碼初期）免費，且最好部署上去的過程可以盡量自動化。

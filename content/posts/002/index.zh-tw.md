@@ -26,15 +26,16 @@ GitHub Pages publishes the URL based on the account’s username. My username is
 
 After publishing the blog on GitHub Pages, I added Google Analytics to check the visitors and found that the only visitor was myself.
 
-![](files/bocchichann.png)  
-Sorry for being self-righteous.
+![](files/bocchichann.png)
+
+> Sorry for being self-righteous.
 
 Wait, that’s not the whole story! I also put my blog on Google Search Console. The key issue is visibility. Some search engine scrapers should visit my website to index it for better search results. Google Analytics might exclude robots, but the signals of other similar services should able be extract . However, there were no such visits.  
 Based on these two reasons, I decided to register a domain and connect it to my blog.
 
 ## Let's Do It
 
-### Cloudflare Domains
+### Cloudflare Domains {#cloudflare-domains}
 
 Before choosing Cloudflare, I compared prices from several domain registrars. Cloudflare provided the best value. I’ll list all the prices I found at the end of this article. Note that prices change frequently, so compare them before buying a domain.
 
@@ -45,7 +46,7 @@ Register a Cloudflare account, go to Domain Registration, enter your desired dom
 After purchasing it, go to Webpages, where you can find the domain you just bought.  
 ![](files/geeky-geekery-dashboard.png)
 
-### Cloudflare Pages
+### Cloudflare Pages {#cloudflare-pages}
 
 Now that we have the domain, we can connect our blog to it. This time, I’ll use the blog I created in the [last post](../blowfish-a-hugo-blog), which is already automated into a static website. Go to Workers & Pages and choose Connect to Git. Alternatively, you can choose Upload Assets to manually upload the static files.  
 If you want to automate (CI/CD) the deployment workflow for future modifications, I suggest connecting to Git like I did.  

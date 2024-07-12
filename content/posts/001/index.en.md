@@ -18,7 +18,7 @@ Most importantly, it looks great.
 
 ![](files/blowfish.png)
 
-Look at the Blowfish logo, how cute it is~
+> Look at the Blowfish logo, how cute it is~
 
 Next, I started thinking about where to deploy it.
 As a beginner, I wanted a platform that is (at least initially) free and preferably automates the deployment process as much as possible.

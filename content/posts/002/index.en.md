@@ -26,8 +26,9 @@ GitHub Pages publishes the URL based on the account’s username. My username is
 
 After publishing the blog on GitHub Pages, I added Google Analytics to check the visitors and found that the only visitor was myself.
 
-![](files/bocchichann.png)  
-Sorry for being self-righteous.
+![](files/bocchichann.png)
+
+> Sorry for being self-righteous.
 
 Wait, that’s not the whole story! I also put my blog on Google Search Console. The key issue is visibility. Some search engine scrapers should visit my website to index it for better search results. Google Analytics might exclude robots, but the signals of other similar services should able be extract . However, there were no such visits.  
 Based on these two reasons, I decided to register a domain and connect it to my blog.
