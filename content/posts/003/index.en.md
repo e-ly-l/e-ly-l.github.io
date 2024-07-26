@@ -7,10 +7,11 @@ slug = "astro-with-tinacms"
 tags = ["Personal Page", "Astro", "TinaCMS", "Tina Cloud", "AWS Amplify"]
 categories = ["implement"]
 +++
+## Preface
 
-When I was thinking about my personal webpage as creator. I choose Nextjs plus TinaCMS as my tech stack. However I didn’t find the suitable theme or template about that.  
-If I have choice, I don’t want everything from scratch. So at that moment, I felt a little frustrated. Until I discussed with my Frontend Engineer friend and he recommended me using Astro, the alternative of Nextjs. And I truly found the template built with Astro and TinaCMS.  
-In this post, I will show how to set up a basic repository with the tech stack Astro and TinaCMS and host it on AWS with a custom domain.  
+When I was thinking about my personal webpage as creator. I choose Nextjs plus TinaCMS as my tech stack. However I didn’t find the suitable theme or template about that.
+If I have choice, I don’t want everything from scratch. So at that moment, I felt a little frustrated. Until I discussed with my Frontend Engineer friend and he recommended me using Astro, the alternative of Nextjs. And I truly found the template built with Astro and TinaCMS.
+In this post, I will show how to set up a basic repository with the tech stack Astro and TinaCMS and host it on AWS with a custom domain.
 I will write another post to comprehensively demonstrate why I think Astro plus CMS might be almost the best way for a creator.
 
 ## Tech Stack
@@ -64,6 +65,7 @@ Now, we need to modify `package.json` to run Astro and tinaCMS at the same time.
 
 ```json
 // package.json
+{
   "scripts": {
     "dev": "tinacms dev -c \"astro dev\" --noTelemetry",
     "start": "tinacms dev -c \"astro dev\" --noTelemetry",
@@ -71,7 +73,7 @@ Now, we need to modify `package.json` to run Astro and tinaCMS at the same time.
     "preview": "astro preview",
     "astro": "astro"
   },
-
+}
 ```
 
 Then run `npm run dev` , and there should also run a admin page on `<local_host_url>/admin` like following.
@@ -144,15 +146,15 @@ export default defineConfig({
 });
 ```
 
-After defining the content schema in the TinaCMS configuration file, we can view the sample data provided by the Astro blog template.  
+After defining the content schema in the TinaCMS configuration file, we can view the sample data provided by the Astro blog template.
 ![](files/blog-posts-dashboard.png)
 If we add content on the admin page, it will also appear on the personal page.
 ![](files/blog-posts-overview.png)
 
 ### Sign up Tina Cloud
 
-This step is to access the admin page after deployment. We need an authorized account and domain to edit content on the admin page.  
-First, we nee to sign up a account on [Tina Cloud](https://app.tina.io/). Then connect to Git repository and specify the custom domain.  
+This step is to access the admin page after deployment. We need an authorized account and domain to edit content on the admin page.
+First, we nee to sign up a account on [Tina Cloud](https://app.tina.io/). Then connect to Git repository and specify the custom domain.
 ![](files/create-project-github-tina-starter.png)
 ![](files/tina-cloud-new-project-setup.png)
 ![](files/configuration-settings-persona.png)
@@ -163,7 +165,7 @@ After completing the project configuration, fill out `clientId` and `token (Cont
 
 AWS Amplify is an easy CI/CD tool for deployment. While we can actually follow [the Astro documentation](https://docs.astro.build/en/guides/deploy/aws/), I prefer to directly operate on AWS dashboard with GUI.
 
-So we choose Amplify in AWS dashboard. Choose the Git repository, deployment branch and build setting then deploy.  
+So we choose Amplify in AWS dashboard. Choose the Git repository, deployment branch and build setting then deploy.
 P.S.: Check which region you are in; for example, I chose ap-northeast-1 (Tokyo).
 ![](files/start-building-with-amplify.png)
 ![](files/add-repository-and-branch.png)
@@ -181,10 +183,10 @@ Go to Hosting > Custom domains, set up the custom domain we owned. I already bou
 
 ### TinaCMS Admin Page
 
-After everything is set up and completed, we can view the page on our custom domain on the internet. This includes the TinaCMS Admin Page, so when we visit `https://<custom_domain>/admin/` , we can modify content after login as Tina Cloud account. If it doesn’t work, check if Tina Cloud Authorization is already set or not.  
+After everything is set up and completed, we can view the page on our custom domain on the internet. This includes the TinaCMS Admin Page, so when we visit `https://<custom_domain>/admin/` , we can modify content after login as Tina Cloud account. If it doesn’t work, check if Tina Cloud Authorization is already set or not.
 ![](files/configuration-persona-project.png)
 
-In the future, we could review commit changes like following after every content change on the admin page.  
+In the future, we could review commit changes like following after every content change on the admin page.
 ![](files/reddit-post-screenshot.png)
 
 ## References
