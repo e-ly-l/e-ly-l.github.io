@@ -2,7 +2,7 @@
 title = "How to post facebook programmingly?"
 description = ""
 summary = ""
-date = 2024-09-27T23:45:00+08:00
+date = 2024-09-26T23:45:00+08:00
 slug = "facebook-posting-api"
 tags = ["facebook graph api"]
 categories = ["implement"]
@@ -120,6 +120,9 @@ https://graph.facebook.com/<POST_ID>/comments
 }
 ```
 
-# References
-- [https://ithelp.ithome.com.tw/articles/10313722](https://ithelp.ithome.com.tw/articles/10313722)
-- [https://gingerdesign.com.tw/facebook-graph-api-tutorial/](https://gingerdesign.com.tw/facebook-graph-api-tutorial/)
+---
+## References
+- [Facebook粉專自動發文以及留言API](https://ithelp.ithome.com.tw/articles/10313722)
+  - I basically follow this article to post to facebook page.
+- [Facebook Graph Api 教學，1秒將臉書貼文轉官網](https://gingerdesign.com.tw/facebook-graph-api-tutorial/)
+  - More detail about facebook graph api.

@@ -48,3 +48,8 @@ Oxylabs offers very detailed [documentation](https://developers.oxylabs.io/) and
 
 ### [Nimble](https://www.nimbleway.com/)
 Their [Batch processing](https://docs.nimbleway.com/data-platform/web-api/batch-processing) approach seems like an interesting way to manage large-scale data scraping tasks.
+
+---
+## References
+ - [Proxyway - Proxy 101](https://proxyway.com/guides?e-filter-ee84452-guides_categories=proxy-101)
+   - The most comprehensive guide to proxies I’ve found so far.

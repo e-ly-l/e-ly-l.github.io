@@ -178,7 +178,7 @@ After it runs, go back to the Code page and check the branches, you will see a `
 Go to the Settings page and click Pages, then set the automated deployment to **[Deploy from a specific branch]**.
 ![](files/github-pages-build-and-deployment-settings.png)
 After setting it up, go back to Actions and you will see it running the deployment.
-![](files/github-actions-workflow-overview-BYlqzIXbWz.png)  
+![](files/github-actions-workflow-overview-BYlqzIXbWz.png)
 Once the deployment is finished, go to Pages, and it will show that it has been deployed to an external URL.
 ![](files/github-pages-site-live-notification-12S7XwQ9iB.png)
 Visit the external URL, and it will be live.
@@ -186,6 +186,7 @@ Visit the external URL, and it will be live.
 
 With this, we have completed the automated deployment of the blog. From now on, just push to Github, and the blog will automatically update~
 
+---
 ## References
 
 - [Build your homepage using Blowfish and Hugo](https://n9o.xyz/posts/202310-blowfish-tutorial/)

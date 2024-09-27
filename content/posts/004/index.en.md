@@ -121,6 +121,7 @@ In this case, I just need to use the `Domain Migration Tool`. First step, we nee
 
 Noted that the migration tool manually moves and the comments will be removed from the old domain. And if there are new comments on the old domain, they won't be automatically moved to the new domain, so we need to do it again. Initially, I thought it could be automatically moved, but it's not. So I need to give up my old domain and move all comments to the new domain.
 
+---
 ## References
 
 - [Hugo 加入 Disqus 整合性留言管理系統](https://coreychen71.github.io/posts/2019-05/hugoadddisqus/)

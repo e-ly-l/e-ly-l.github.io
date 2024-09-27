@@ -178,7 +178,7 @@ jobs:
 到 Settings 頁面點 Pages ，並設定自動化流程為 **[從特定分支部署]** 。
 ![](files/github-pages-build-and-deployment-settings.png)
 設定完後，再次到 Actions 看，他就已經在跑部署了。
-![](files/github-actions-workflow-overview-BYlqzIXbWz.png)  
+![](files/github-actions-workflow-overview-BYlqzIXbWz.png)
 等上面的部署跑完，再次到 Pages 看，會顯示已經部署到外部位址了。
 ![](files/github-pages-site-live-notification-12S7XwQ9iB.png)
 連到外部位址，果然出現了。
@@ -186,6 +186,7 @@ jobs:
 
 這樣我們就完成部落格的自動化部署啦，以後只要推到 Github ，部落格就會自動更新囉～
 
+---
 ## 參考資料
 
 - [Build your homepage using Blowfish and Hugo](https://n9o.xyz/posts/202310-blowfish-tutorial/)

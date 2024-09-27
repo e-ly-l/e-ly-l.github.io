@@ -30,7 +30,7 @@ After publishing the blog on GitHub Pages, I added Google Analytics to check the
 
 > Sorry for being self-righteous.
 
-Wait, that’s not the whole story! I also put my blog on Google Search Console. The key issue is visibility. Some search engine scrapers should visit my website to index it for better search results. Google Analytics might exclude robots, but the signals of other similar services should able be extract . However, there were no such visits.  
+Wait, that’s not the whole story! I also put my blog on Google Search Console. The key issue is visibility. Some search engine scrapers should visit my website to index it for better search results. Google Analytics might exclude robots, but the signals of other similar services should able be extract . However, there were no such visits.
 Based on these two reasons, I decided to register a domain and connect it to my blog.
 
 ## Let's Do It
@@ -43,49 +43,49 @@ Register a Cloudflare account, go to Domain Registration, enter your desired dom
 
 ![](files/domain-registration-page.png)
 
-After purchasing it, go to Webpages, where you can find the domain you just bought.  
+After purchasing it, go to Webpages, where you can find the domain you just bought.
 ![](files/geeky-geekery-dashboard.png)
 
 ### Cloudflare Pages {#cloudflare-pages}
 
-Now that we have the domain, we can connect our blog to it. This time, I’ll use the blog I created in the [last post](../blowfish-a-hugo-blog), which is already automated into a static website. Go to Workers & Pages and choose Connect to Git. Alternatively, you can choose Upload Assets to manually upload the static files.  
-If you want to automate (CI/CD) the deployment workflow for future modifications, I suggest connecting to Git like I did.  
+Now that we have the domain, we can connect our blog to it. This time, I’ll use the blog I created in the [last post](../blowfish-a-hugo-blog), which is already automated into a static website. Go to Workers & Pages and choose Connect to Git. Alternatively, you can choose Upload Assets to manually upload the static files.
+If you want to automate (CI/CD) the deployment workflow for future modifications, I suggest connecting to Git like I did.
 ![](files/get-started-with-workers-and-pages.png)
-Connect to our GitHub account and select the repository we want to publish.  
+Connect to our GitHub account and select the repository we want to publish.
 ![](files/deploy-site-from-account.png)
-Choose the branch we want to automatically deploy in the future.  
-Ensure we finish the build of the website, as mentioned in the [last post](../blowfish-a-hugo-blog), or we will need to complete the Build settings.  
+Choose the branch we want to automatically deploy in the future.
+Ensure we finish the build of the website, as mentioned in the [last post](../blowfish-a-hugo-blog), or we will need to complete the Build settings.
 ![](files/add-custom-domain.png)
-It will start to deploy. Once finished, it will look like this:  
+It will start to deploy. Once finished, it will look like this:
 ![](files/deployment-dashboard-bFAyJjvcpU.png)
-Now we can connect the website to the domain we just bought.  
+Now we can connect the website to the domain we just bought.
 ![](files/set-up-builds-and-deployments.png)
 
-Keep clicking next.  
+Keep clicking next.
 ![](files/confirm-new-dns-record.png)
-It will start configuring DNS, SSL, etc.  
+It will start configuring DNS, SSL, etc.
 ![](files/custom-domains-setup.png)
 ![](files/custom-domains-setup-RdCt0O7WaU.png)
-We can add subdomains that redirect to the website.  
+We can add subdomains that redirect to the website.
 ![](files/custom-domains-setup-IKAlVVngFB.png)
 
 ### Web Analytics
 
-Not done yet. By using Cloudflare Domains to connect the website, we can use the built-in Web Analytics. Go to Analytics & Logs > Web Analytics and choose the right domain.  
+Not done yet. By using Cloudflare Domains to connect the website, we can use the built-in Web Analytics. Go to Analytics & Logs > Web Analytics and choose the right domain.
 ![](files/web-analytics-setup.png)
-Got it. Very simple huh?  
+Got it. Very simple huh?
 ![](files/web-analytics-dashboard.png)
 
 ### Google Search Console
 
-Now, let’s register our website on Google Search Console for better SEO. You’ll need a Google account for this. My account is in German, so sorry for the following screenshots.  
-To explain briefly, we add the property to register the website. There are two ways to register: by domain or URL. If you choose the domain option and your domain registrar is Cloudflare, the steps will look like this…  
+Now, let’s register our website on Google Search Console for better SEO. You’ll need a Google account for this. My account is in German, so sorry for the following screenshots.
+To explain briefly, we add the property to register the website. There are two ways to register: by domain or URL. If you choose the domain option and your domain registrar is Cloudflare, the steps will look like this…
 ![](files/google-search-console-domain-verification.png)
 ![](files/authorize-dns-records-google-cloudflare.png)
 ![](files/google-search-console-ownership-confirmation.png)
 That's all! Happy Hosting!
 
-P.S: After publishing the blog on CloudFlare Pages with a custom domain, I started getting some unknown visitors! It looks like a real website now!  
+P.S: After publishing the blog on CloudFlare Pages with a custom domain, I started getting some unknown visitors! It looks like a real website now!
 ![](files/web-analytics-geeky-geekery.png)
 
 ## Digression
@@ -104,6 +104,7 @@ P.S: After publishing the blog on CloudFlare Pages with a custom domain, I start
 I chose Cloudflare partly because of the price but also for other services I wanted to try, such as Website Analytics mentioned above and Cloudflare R2 (similar to AWS S3), which offers a free tier sufficient for early blogging. A [pal](https://sspai.com/post/90170) seems to be using this service smoothly.
 ![](files/r2-free-monthly-usage-plan.png)
 
+---
 ## References
 
 - [Google Search Console 教學：使用與設定指南](https://www.yesharris.com/search-console/search-console-intro/)

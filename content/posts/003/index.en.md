@@ -189,6 +189,7 @@ After everything is set up and completed, we can view the page on our custom dom
 In the future, we could review commit changes like following after every content change on the admin page.
 ![](files/reddit-post-screenshot.png)
 
+---
 ## References
 
 - [TinaCMS & Astro](https://docs.astro.build/de/guides/cms/tina-cms/)
