@@ -88,7 +88,7 @@ I use [Free Privacy Policy Generator](https://www.freeprivacypolicy.com/free-pri
 
 ![](files/app-basics-with-privacy-policy-url.png)
 
-## Facebook Post API
+## Facebook API
 After everything is ready, we can use the following API to post and comment to facebook page.
 
 ### Post
